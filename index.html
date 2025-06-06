@@ -8,35 +8,35 @@
 
     <script>
         function startTest() {
-        var otvet = 0;
-         var a = prompt("как завут нашу собаку?")
-        if (a == "марта","Марта") {
-           alert("Правильно")
-           otvet++
-         } else {
-               alert("Неправильно")
-           }
-           var c = prompt("сколько лет нашей собаке?")
-         if (c == "2","два","Два") {
-          alert("Правильно") 
-          otvet++
-         } else {
-              alert("Неправильно")
-          
-         }
-        
-        
-        
-    var b = prompt("В каком месяце собака родилась?")
-    if (b == "март","Март") {
-        alert("Правильно")
-        otvet++
+    var otvet = 0;
+    var a = prompt("Как зовут нашу собаку?");
+    if (a === "марта" || a === "Марта") {
+        alert("Правильно");
+        otvet++;
     } else {
-        alert("Неправильно")
+        alert("Неправильно");
     }
-  document.getElementById("result").innerText = "Правильных ответов: " + otvet + " из 3";
-  document.getElementById("photo").style.display = "block";
-} 
+
+    var c = prompt("Сколько лет нашей собаке?");
+    if (c === "2" || c === "два" || c === "Два" || c === "2,5") {
+        alert("Правильно");
+        otvet++;
+    } else {
+        alert("Неправильно");
+    }
+
+    var b = prompt("В каком месяце собака родилась?");
+    if (b === "март" || b === "Март") {
+        alert("Правильно");
+        otvet++;
+    } else {
+        alert("Неправильно");
+    }
+
+    document.getElementById("result").innerText = "Правильных ответов: " + otvet + " из 3";
+    document.getElementById("photo").style.display = "block";
+}
+
     </script>
 
     
