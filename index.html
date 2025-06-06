@@ -11,37 +11,40 @@
     var otvet = 0;
     var a = prompt("Как зовут нашу собаку?");
     if (a === "марта" || a === "Марта") {
-      
+        alert("Правильно");
         otvet++;
-    } else 
-        
+    } else {
+        alert("Неправильно");
+    }
 
     var c = prompt("Сколько лет нашей собаке?");
     if (c === "2" || c === "два" || c === "Два" || c === "2,5") {
-       
+        alert("Правильно");
         otvet++;
-    } else 
-        
+    } else {
+        alert("Неправильно");
+    }
 
     var b = prompt("В каком месяце собака родилась?");
     if (b === "март" || b === "Март") {
-       
+        alert("Правильно");
         otvet++;
     } else {
-        
-    var d = prompt("Какое прозвище у Марты? подсказка в деда пошла");
+        alert("Неправильно");
+    }
+    var d = prompt("Какое прозвище у Марты?подсказка в деда пошла");
     if (d === "самосрунчик" || d === "Самосрунчик") {
-        
+        alert("Правильно");
         otvet++;
     } else {
-       
+        alert("Неправильно");
     }
     var e = prompt("Что делает Марта когда видит любимого человека спустя время?")
-    if (e === "ссытся" || e === "Ссытся") {
-       
+    if (e === "сыться" || e === "сыться"  || e === "ссытся"||e ==="Ссытся"     ) {
+        alert("Правильно");
         otvet++;
     } else {
-       
+        alert("Неправильно");
     }
 
     document.getElementById("result").innerText = "Правильных ответов: " + otvet + " из 5";
@@ -50,7 +53,6 @@
     document.getElementById("photo").style.display = "block";
 }
 
-        }
         }
     </script>
 
@@ -62,5 +64,6 @@
 
 <button onclick="startTest()">начать тест</button>
 <div id="result"></div>
+
 </body>
 </html>
