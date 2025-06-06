@@ -11,40 +11,53 @@
     var otvet = 0;
     var a = prompt("Как зовут нашу собаку?");
     if (a === "марта" || a === "Марта") {
-        alert("Правильно");
+      
         otvet++;
-    } else {
-        alert("Неправильно");
-    }
+    } else 
+        
 
     var c = prompt("Сколько лет нашей собаке?");
     if (c === "2" || c === "два" || c === "Два" || c === "2,5") {
-        alert("Правильно");
+       
         otvet++;
-    } else {
-        alert("Неправильно");
-    }
+    } else 
+        
 
     var b = prompt("В каком месяце собака родилась?");
     if (b === "март" || b === "Март") {
-        alert("Правильно");
+       
         otvet++;
     } else {
-        alert("Неправильно");
+        
+    var d = prompt("Какое прозвище у Марты?","подсказка в деда пошла");
+    if (d === "самосрунчик" || d === "Самосрунчик") {
+        
+        otvet++;
+    } else {
+       
+    }
+    var e = prompt("Что делает Марта когда видит любимого человека спустя время?")
+    if (e === "ссытся" || e === "Ссытся") {
+       
+        otvet++;
+    } else {
+       
     }
 
-    document.getElementById("result").innerText = "Правильных ответов: " + otvet + " из 3";
-    if (otvet === 3) {
+    document.getElementById("result").innerText = "Правильных ответов: " + otvet + " из 5";
+    if (otvet === 5) {
         
     document.getElementById("photo").style.display = "block";
 }
+
+        }
         }
     </script>
 
     
 </head>
 <body>
-<p>Всего вопросов: 3</p>
+<p>Всего вопросов: 5</p>
 <img id="photo" src="marta.jpg" alt="фото" style="height: 500px; display: none;">
 
 <button onclick="startTest()">начать тест</button>
